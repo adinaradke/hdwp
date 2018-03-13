@@ -26,9 +26,24 @@ body {
   height: 100%;
 }
 
-#logo {
+header {
+  display: block;
+  margin-bottom: 6vw;
+  position: relative;
+}
+
+section {
+  margin-bottom: 6vw;
+}
+
+#splash-logo {
   width: 32vw;
   height: 32vw;
+}
+
+#logo {
+  width: 12vw;
+  height: 12vw;
 }
 
 #hdwp {
@@ -139,8 +154,9 @@ li:hover .episode_info {
 
 figure {
   margin: 0 auto;
-  /*display: block;*/
-  width: 45%;
+  margin-top: 18vw;
+  width: 55%;
+
 }
 
 .cover {
@@ -154,10 +170,12 @@ figure {
 
 .cover h2 {
   font-size: 6em;
+  line-height: 1.6em;
   font-weight: normal;
   color: white;
   text-align: center;
   margin-top: 6vw;
+  margin-bottom: 6vw;
 }
 
 @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
