@@ -1,0 +1,247 @@
+
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+}
+
+/* RESET */
+p, ul, h1, h2, h3 {
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+}
+
+html {
+}
+
+body {
+  background-color: #F1D3D3;
+  color: #1539CF;
+  font-family: 'Fira Mono', monospace;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+  height: 100%;
+}
+
+#logo {
+  width: 32vw;
+  height: 32vw;
+}
+
+#hdwp {
+  fill: #1539CF;
+}
+
+rect {
+  fill: none;
+  stroke: #1539CF;;
+  stroke-width: 11;
+  stroke-miterlimit:10;
+}
+
+.text {
+  width: 60vw;
+  margin-bottom: 2.4em;
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.6em;
+  margin-bottom: 0.8em;
+}
+
+a {
+  text-decoration: underline;
+  color: #1539CF;
+}
+
+.wrapper {
+  margin: 0 auto;
+  overflow: scroll;
+  height: 100%;
+  width: 70%;
+  align-items: center;
+  padding: 4vw 0 0 0;
+}
+
+li.episode_item {
+  margin: 4vw 0 0 4vw;
+}
+
+.episode_item {
+  box-sizing: border-box;
+  color: #1539CF;
+  border: 6px solid;
+  border-color: #1539CF;
+  padding: 1em;
+  display: inline-block; 
+  height: 200px; 
+  width: 200px;
+  position: relative;
+  overflow: hidden;
+  font-size: 1em;
+  line-height: 1.4em;
+}
+
+.episode_no {
+  font-size: 2.2em;
+  font-weight: bold;
+  font-style: italic;
+  margin-top: 40%;
+}
+
+.episode_info {
+  height: 200px; 
+  width: 200px;
+  position: absolute; 
+  left: 0; 
+  bottom: 0;
+  padding: 1em;
+  z-index: 0;
+  background: #1539CF;
+  color: #F1D3D3;
+
+  -webkit-transition: all 0.3s ease 0s;
+     -moz-transition: all 0.3s ease 0s;
+      -ms-transition: all 0.3s ease 0s;
+       -o-transition: all 0.3s ease 0s;
+          transition: all 0.3s ease 0s;
+  
+  -webkit-transform: translate(0,100%);
+     -moz-transform: translate(0,100%);
+      -ms-transform: translate(0,100%);
+       -o-transform: translate(0,100%);
+          transform: translate(0,100%);
+  opacity: 1;
+}
+
+a.episode_info {
+  color: #F1D3D3;
+  text-decoration: none;
+}
+
+li:hover .episode_info {
+  height: 100%;
+  -webkit-transform: translate(0,0);
+     -moz-transform: translate(0,0);
+      -ms-transform: translate(0,0);
+       -o-transform: translate(0,0);
+          transform: translate(0,0);
+  opacity: 1;
+}
+
+.link_more:after {
+    content: ' →';
+}
+
+figure {
+  margin: 0 auto;
+  /*display: block;*/
+  width: 45%;
+}
+
+.cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -700;
+}
+
+.cover h2 {
+  font-size: 6em;
+  font-weight: normal;
+  color: white;
+  text-align: center;
+  margin-top: 6vw;
+}
+
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+ 
+.fade-in {
+  opacity:0;
+  -webkit-animation:fadeIn ease-in 1; 
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+ 
+  -webkit-animation-fill-mode:forwards;  
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+ 
+  -webkit-animation-duration:0.3s;
+  -moz-animation-duration:0.3s;
+  animation-duration:0.3s;
+
+  -webkit-animation-delay: 0.5s;
+  -moz-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
+.splash {
+  /*background: url('../img/splash-bg.jpg') center center;*/
+  background-color: #F1D3D3;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  min-height: 360px;
+  z-index: 999;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+}
+
+.splash-title {
+  margin: 6vw 0 0 0;
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+a.splash-arrow {
+  color: #1539CF;
+  font-size: 1.2em;
+  position: absolute;
+  bottom: 55px;
+  left: 50%;
+  margin-left: -25px;
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  font-weight: bold;
+  -webkit-transition: all 0.1s ease;
+  -moz-transition: all 0.1s ease;
+  -o-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+  -webkit-animation-delay: 1.5s;
+  -moz-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+  border: 3px solid #1539CF;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+
+a.splash-arrow:hover {
+  text-decoration: none;
+  bottom: 50px;
+}
+
+@media all and (max-width: 690px) {
+  .splash-title {font-size: 2em;}
+}
+
+@media all and (max-width: 480px) {
+  .splash-title {font-size: 1.5em;}
+}
+
+
+
+
