@@ -19,7 +19,7 @@ html {
 
 body {
   background-color: #F2F3F5;
-  color: #AEB5D6;
+  color: #001EAA;
   font-family: base-mono-wide, monospace;
   font-weight: normal;
   font-style: normal;
@@ -68,8 +68,12 @@ p {
 }
 
 a {
-  text-decoration: underline;
-  color: #1539CF;
+  text-decoration: none;
+  color: #001EAA;
+}
+
+a:hover {
+  color: #303037;
 }
 
 .wrapper {
