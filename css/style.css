@@ -20,8 +20,9 @@ html {
 body {
   background-color: #F1D3D3;
   color: #1539CF;
-  font-family: 'Fira Mono', monospace;
+  font-family: base-mono-wide, monospace;
   font-weight: normal;
+  font-style: normal;
   text-rendering: optimizeLegibility;
   height: 100%;
 }
